@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;  padding:0;
+    box-sizing:border-box; font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth; font-size:62.5%;
+}
+
+body{
+    background:#081b29; color:#ededed; overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    position:fixed; top:0; left:0;
+    width:100%;  padding:2rem 10%;
+    background:#081b29; display:flex;
+    justify-content:space-between;
+    align-items:center; z-index:1000;
+}
+
+.logo{
+    font-size:3rem; font-weight:700; color:#0ef;
+}
+
+.navbar a{
+    color:white; font-size:1.8rem;
+    margin-left:3.5rem; transition:.3s;
+}
+
+.navbar a:hover, .navbar .active{
+    color:#0ef;
+}
+
+/* ================= HAMBURGER MENU ================= */
+
+.menu-btn{
+    display: none;  font-size: 3rem;
+    color: #0ef; cursor: pointer;
+}
+
+/* ================= ALL SECTION ================= */
+
+section{
+    min-height:100vh;  padding:6rem 10%;
+}
+
+span{
+    color:#0ef;
+}
+
+h2{
+    font-size:5rem; text-align:center;
+    margin-bottom:2rem;
+}
+
+/* ================= HOME ================= */
+
+.home{
+    display:flex; align-items:center;
+    justify-content:space-between; gap:2rem;
+}
+
+.home-content{
+    max-width:65rem;
+}
+
+.home-content h3{
+    font-size:3.2rem;
+}
+
+.home-content h1{
+    font-size:6rem;  margin:.5rem 0;
+
+}
+
+.home-content p{
+     font-size:1.8rem; line-height:1.7;
+}
+
+.home-sci{
+    margin:3rem 0;
+}
+
+.home-sci a{
+    display:inline-flex; justify-content:center;
+    align-items:center;  color:#0ef;
+    width:4.5rem; height:4.5rem;
+    border:2px solid #0ef;    border-radius:50%;
+    font-size:2.2rem; margin-right:1.5rem;
+    transition:.3s;
+}
+
+.home-sci a:hover{
+    background:#0ef; color:#081b29;
+    box-shadow:0 0 25px #0ef;
+}
+
+.btn-box{
+    display:inline-block;  padding:1.2rem 3rem;
+    background:#0ef; color:#081b29;
+    border-radius:4rem; font-size:1.6rem;
+    font-weight:600; transition:.3s;
+}
+
+.btn-box:hover{
+    box-shadow: 0 0 20px #0ef, 0 0 50px #0ef;
+
+}
+
+/* ================= IMAGE ================= */
+
+.about-img img{
+    width:42rem;  height:42rem;
+    object-fit:cover;  border-radius:50%;
+    border:5px solid #0ef;
+    box-shadow: 0 0 25px #0ef, 0 0 60px #0ef;
+}
+
+/* ================= ABOUT ================= */
+.about{
+    display:flex; align-items:center;
+    gap:2rem; background: #112e42;
+}
+
+.about-text{
+    max-width:70rem;
+}
+
+.about-text h2{
+    text-align:left;
+}
+
+
+.about-text h4{
+    font-size:2.8rem; margin-bottom:2rem;
+
+}
+
+.about-text p{
+    font-size:1.8rem; line-height:1.8;
+}
+
+/* ==================== EDUCATION SECTION ==================== */
+.education {
+    background: #081b29;  padding: 4rem 10%; color: #fff;
+}
+
+.education-container {
+    display: flex; justify-content: center;
+    align-items: center;  flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.education-container .education-box {
+    flex: 1 1 30rem; background: #112e42;
+    padding: 3rem 2rem 4rem; border-radius: 2rem;
+    text-align: left; border: 2px solid transparent;
+    transition: .5s ease;
+    box-shadow: 0 0 15px rgba(0, 238, 255, 0.3);
+}
+
+/* Card Hover Expansion and Glow Intensification */
+.education-container .education-box:hover {
+    border-color: #0ef; transform: translateY(-10px);
+    box-shadow: 0 0 25px #0ef;
+}
+
+.education-box i {
+    font-size: 50px;  color: #0ef;  display: block;
+    margin-left: 1rem; margin-bottom: 1.5rem;
+}
+
+.education-box h3 {
+    font-size: 28px; font-weight: 600;
+    margin-left: 1rem;
+}
+
+.education-box h4 {
+    font-size: 18px; font-weight: 500;
+    color: #0ef; margin: 0.5rem 1rem 1rem;
+}
+
+.education-box p {
+    font-size: 15px; line-height: 1.6;
+    margin: 1rem; color: #d1d1d1;
+}
+
+/* Custom mini read-more button inside cards */
+.education-box .btn-box {
+    display: inline-block; padding: 10px 24px;
+    background: #0ef;  color: #081b29;
+    border-radius: 40px;  font-size: 14px;
+    letter-spacing: 1px; text-decoration: none;
+    font-weight: 600; margin-left: 1rem;
+    margin-top: 1.5rem;  transition: .5s ease;
+    box-shadow: 0 0 5px #0ef, 0 0 15px #0ef;
+}
+
+.education-box .btn-box:hover {
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef, 0 0 50px #0ef;
+}
+
+/* ==================== SKILLS SECTION ==================== */
+.skills {
+    background:  #102533;  padding: 4rem 10%; color: #fff;
+    
+}
+
+.heading {
+    text-align: center; font-size: 60px;  margin-bottom: 5rem;
+}
+
+.heading span {
+    color: #0ef;
+}
+
+.skills-row {
+    display: flex; flex-wrap: wrap; gap: 5rem;
+}
+
+.skills-column {
+    flex: 1 1 45rem;
+}
+
+.title {
+    font-size: 25px; margin-bottom: 3rem;
+    text-align: center; text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+/* Technical Skills Layout (Horizontal) */
+.skills-box .skills-content {
+    position: relative; border: 2px solid #0ef;
+    border-radius: .6rem; padding: 2rem;
+    box-shadow: 0 0 10px #0ef;
+}
+
+.skills-content .progress {
+    padding: 1rem 0;
+}
+
+.skills-content .progress h3 {
+    font-size: 17px; display: flex;
+    justify-content: space-between;
+}
+
+.skills-content .progress h3 span {
+    color: #0ef;
+}
+
+.skills-content .progress .bar {
+    height: 2.5rem; width: 100%; background: #081b29;
+    border: 2px solid #0ef;
+    border-radius: .5rem; margin-top: 1rem;
+    position: relative; overflow: hidden;
+}
+
+.skills-content .progress .bar span {
+    display: block; height: 100%; background: #0ef;  box-shadow: 0 0 10px #0ef;
+    border-radius: .3rem; transform: scaleX(0); transform-origin: left;
+    animation: animateBars 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animateBars {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* Professional Skills Layout (Radial Circles) */
+.radial-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 1rem; justify-items: center;
+}
+
+.radial-bars .radial-bar {
+    position: relative; width: 150px;
+    height: 170px; display: flex;
+    flex-direction: column; align-items: center;
+}
+
+.radial-bars .radial-bar svg {
+    position: absolute; top: 0; left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+    width: 130px; height: 130px;
+}
+
+.radial-bar svg .progress-bar {
+    stroke-width: 10; stroke: #081b29;
+    fill: transparent;
+}
+
+.radial-bar svg .path-bar {
+    stroke-width: 10;  stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animateRadial 1.5s linear forwards;
+}
+
+/* Dynamic math offsets for SVG percentages (Formula: 502 - (502 * %)/100) */
+.path-1 { stroke-dashoffset: 50.2; }   
+.path-2 { stroke-dashoffset: 175.7; } 
+.path-3 { stroke-dashoffset: 125.5; }  
+.path-4 { stroke-dashoffset: 75.3; }  
+
+@keyframes animateRadial {
+    100% {
+        stroke-dashoffset: inherit;
+    }
+}
+
+.radial-bar .percentage {
+    position: absolute; top: 50px;
+    font-size: 18px; font-weight: 600;
+}
+
+.radial-bar .text {
+    position: absolute; bottom: 0;
+    font-size: 16px; font-weight: 500;
+    text-align: center;
+}
+
+/* ==================== PROJECTS SECTION ==================== */
+.projects {
+    background: #081b29; padding: 4rem 10%;
+    color: #fff;
+}
+
+/* Vertically stacks the cards and aligns them center */
+.projects-container {
+    display: flex; flex-direction: column;
+    align-items: center;  gap: 1.5rem;
+    width: 100%; max-width: 1000px;
+    margin: 0 auto;
+}
+
+.projects-container .project-box {
+    width: 100%;   background: #0c1f2d;
+    padding: 3rem 2.5rem; border-radius: 1.5rem;
+    border: 2px solid #0ef; text-align: left;
+    box-shadow: 0 0 15px rgba(0, 238, 255, 0.1);
+    transition: .4s ease;
+}
+
+/* Card Hover Elevation Effect */
+.projects-container .project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.3);
+}
+
+.project-box h3 {
+    font-size: 28px; font-weight: 700;
+    color: #0ef; margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.project-box p {
+    font-size: 17px;  line-height: 1.6;
+    color: #e0e0e0;  font-weight: 400;
+}
+
+/* ==================== CONTACT SECTION ==================== */
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;  gap: 3rem;
+    padding-left: 15%; padding-right: 15%;
+    background: #243f52; color: #fff;
+    padding-top: 4rem; padding-bottom: 4rem;
+}
+
+.contact-text h2 {
+    font-size: 60px; line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.contact-text h2 span {
+    color: #0ef;
+}
+
+.contact-text h4 {
+    margin: 15px 0; color: #fff;
+    font-size: 20px; font-weight: 600;
+}
+
+.contact-text p {
+    color: #fff; font-size: 16px;
+    line-height: 1.6; margin-bottom: 2rem;
+}
+
+.contact-list {
+    margin-bottom: 3rem; list-style: none;
+}
+
+.contact-list li {
+    margin-bottom: 10px; display: block;
+    font-size: 16px;
+}
+
+.contact-list i {
+    display: inline-block; color: #0ef;
+    font-size: 20px; font-weight: 600;
+    margin-right: 10px;
+}
+
+.contact-icons i {
+    display: inline-flex;  justify-content: center;
+    align-items: center; width: 40px;
+    height: 40px; background: transparent;
+    border: 2px solid #0ef; border-radius: 50%;
+    font-size: 20px; color: #0ef;
+    text-decoration: none; margin: 30px 15px 30px 0;
+    transition: .5s ease; opacity: 1;
+}
+
+.contact-icons i:hover {
+    background: #0ef; color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+/* Form Layout & Fields */
+.contact-form form {
+    position: relative; display: flex;
+    flex-direction: column;
+}
+
+.contact-form form input, 
+.contact-form form textarea {
+    width: 100%;  padding: 18px;
+    background: #323946; color: #fff;
+    border: none; outline: none;
+    font-size: 16px; border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form form textarea {
+    resize: none;
+}
+
+/* Submit Button Custom Styling */
+.contact-form form .send {
+    display: inline-block;  padding: 14px 28px;
+    background: #0ef; border-radius: 40px;
+    font-size: 16px; color: #081b29;
+    letter-spacing: 1px; text-decoration: none;
+    font-weight: 600; cursor: pointer;
+    width: 100%; transition: .5s ease;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+
+.contact-form form .send:hover {
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef, 0 0 50px #0ef,
+    0 0 100px #0ef;
+}
+
+/* Footer Section */
+.last-text {
+    width: 100%; text-align: center;
+    padding: 25px 0; background: #081b29;
+    color: #fff; font-weight: 300;
+    font-size: 14px;
+}
+
+/* Back to Top Button Sticky Ring */
+.top {
+    position: fixed; bottom: 2.1rem;
+    right: 2,1rem; display: inline-flex;
+    justify-content: center; align-items: center;
+}
+
+.top i {
+    color: #081b29; background: #0ef;
+    font-size: 20px; padding: 10px;
+    border-radius: 8px;
+}
+
+/* ================= TABLET ================= */
+@media(max-width:991px){
+
+html{
+    font-size:55%;
+}
+
+.header{
+    padding:2rem 5%;
+}
+
+.home{
+    flex-direction:column-reverse;text-align:center;
+}
+
+.about{
+    flex-direction:column; text-align:center;
+}
+
+.about-text h2{
+    text-align:center;
+}
+}
+
+
+/* ================= MOBILE ================= */
+@media(max-width:768px){
+
+html{
+    font-size:50%;
+}
+
+.header{
+    padding:2rem 5%;
+    position:fixed;
+}
+
+.menu-btn{
+    display:block;
+}
+
+.navbar{
+    display:none; position:absolute;
+    top:100%; right:5%; width:220px;
+    background:#112e42; border:2px solid #0ef;
+    border-radius:10px; flex-direction:column;
+    text-align:center; padding:1rem 0;
+}
+
+.navbar.active{
+    display:flex;
+}
+
+.navbar a{
+    display:block;  margin:1.5rem 0; font-size:1.8rem;
+}
+
+section{
+    padding:14rem 5% 6rem;
+}
+
+.home{
+    flex-direction:column-reverse; text-align:center;
+}
+
+.home-content h1{
+    font-size:4rem;
+}
+
+.home-content h3{
+    font-size:2.5rem;
+}
+
+.home-content p{
+    font-size:1.5rem;
+}
+
+.about{
+    flex-direction:column;text-align:center;
+}
+
+.about-img img{
+    width:25rem; height:25rem;
+}
+ .education-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-container .education-box{
+    width:100%;
+    max-width:550px;
+}
+.contact{
+    grid-template-columns:1fr;
+}
+} 
+
+/* ================= SMALL PHONE ================= */
+@media(max-width:400px){
+
+.logo{
+    font-size:2.5rem;
+}
+
+.navbar a{
+    font-size:1.4rem;
+}
+
+.home-content h1{
+    font-size:3.2rem;
+}
+
+.about-img img{
+    width:20rem;    height:20rem;
+}
+}
+
